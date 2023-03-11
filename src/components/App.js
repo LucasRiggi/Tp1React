@@ -17,7 +17,7 @@ import Acceuil from "../pages/Acceuil";
 function App() {
   return (
     <Router>
-      <MainNavigation />
+      <MainNavigation/>
       <main>
         <Switch>
           <Route path="/" exact>
