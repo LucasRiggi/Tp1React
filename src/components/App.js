@@ -1,15 +1,37 @@
-import logo from '../assets/Logomomo.png';
-import '../style/App.css'
+import React from "react";
+
+import "../style/App.css";
+import logo from "../assets/Logomomo.png";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from "react-router-dom";
+
+import Cours from "../pages/Cours";
+import Professeur from "../pages/Professeur";
+import MainNavigation from "../shared/Navigation/MainNavigation";
+import Acceuil from "../pages/Acceuil";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <img src={logo} alt='logo montmorency' className='lmj-logo' />
-      <h1>OUGNIGNANON </h1>
-      <p>wesh salut a tous c metre gibs donner moi 200 euros pour que je puisse finir mon album en france</p>
-      </header>
-    </div>
+    <Router>
+      <MainNavigation />
+      <main>
+        <Switch>
+          <Route path="/" exact>
+            <Acceuil />
+          </Route>
+          <Route path="/professeur" exact>
+            <Professeur />
+          </Route>
+          <Route path="/cours" exact>
+            <Cours />
+          </Route>
+        </Switch>
+      </main>
+    </Router>
   );
 }
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import MainHeader from "./MainHeader";
 import NavLinks from "./NavLinks";
 import SideDrawer from "./SideDrawer";
-import Backdrop from "../Backdrop"
+import Backdrop from "./Backdrop"
 
 import "./MainNavigation.css";
 
@@ -36,7 +36,7 @@ function MainNavigation(props) {
           <span />
         </button>
         <h1 className="main-navigation__title">
-          <Link to="/">Vos places</Link>
+          <Link to="/">Acceuil</Link>
         </h1>
         <nav className="main-navigation__header-nav">
           <NavLinks />
