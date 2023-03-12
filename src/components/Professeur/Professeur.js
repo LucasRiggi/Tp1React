@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import Cadre from "./components/Cadre";
+import "../../style/Professeur.css"
+import Card from "./components/Card";
 import Profile from "./components/Profile";
 
 function Professeur({ professeur }) {
   return (
     <li className="user-item">
-      <Cadre className="user-item__content">
+      <Card className="user-item__content">
         <Link to={`/${professeur.id}/places`}>
           <div className="user-item__image">
             <Profile image={professeur.image} alt={professeur.nom} />
@@ -20,7 +20,7 @@ function Professeur({ professeur }) {
             </h3>
           </div>
         </Link>
-      </Cadre>
+      </Card>
     </li>
   );
 }
