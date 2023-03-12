@@ -2,7 +2,11 @@ import ReactDOM from "react-dom";
 import React from "react";
 import ListeProfesseurs from "../components/Professeur/ListeProfesseurs";
 
-
+function ajouterProf(nouveauProf) {
+  setObjectifsCours(() => objectifsCours.concat(nouveauProf));
+  //objectifsCours.push(nouvelObjectif);
+  
+}
 
 function Professeurs() {
   const professeurs = [
@@ -11,8 +15,7 @@ function Professeurs() {
       dateEmbauche:"1/09/2002",
       nom: "Sylvain",
       prenom: "Labranche",
-      image:
-        "https://corp.smartbrief.com/wp-content/uploads/2023/03/AMERICANED_SUTTON_052-726x420.jpg",
+      image: "https://corp.smartbrief.com/wp-content/uploads/2023/03/AMERICANED_SUTTON_052-726x420.jpg",
       Cours:["Web et bases de données", "Algorithmie et programmation"]
     },
     {

@@ -9,7 +9,7 @@ import {
   Switch,
 } from "react-router-dom";
 
-import Cours from "../pages/Cours";
+import LesCours from "../pages/LesCours";
 import Professeurs from "../pages/Professeurs";
 import MainNavigation from "../shared/Navigation/MainNavigation";
 import Acceuil from "../pages/Acceuil";
@@ -27,7 +27,7 @@ function App() {
             <Professeurs />
           </Route>
           <Route path="/cours" exact>
-            <Cours />
+            <LesCours />
           </Route>
         </Switch>
       </main>

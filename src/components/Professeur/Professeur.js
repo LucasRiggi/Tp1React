@@ -8,7 +8,7 @@ function Professeur({ professeur }) {
   return (
     <li className="user-item">
       <Card className="user-item__content">
-        <Link to={`/${professeur.id}/places`}>
+        <Link to={`/${professeur.id}`}>
           <div className="user-item__image">
             <Profile image={professeur.image} alt={professeur.nom} />
           </div>
