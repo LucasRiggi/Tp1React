@@ -14,11 +14,18 @@ function Professeur({ professeur }) {
           </div>
 
           <div className="user-item__info">
-            <h2>{professeur.nom}</h2>
-            <h3>
-              {professeur.places} {professeur.places < 2 ? "place" : "places"}
-            </h3>
+            <h2>{professeur.nom + " "+ professeur.prenom}</h2>
+            <h3>{"Date d'Embauche: "+ professeur.dateEmbauche} </h3>
           </div>
+          
+          <div className="proffeseur_coursInf">
+          <ul>{professeur.Cours.map((cours) => (
+					<li key={cours}>{cours}</li>
+				  ))}</ul>
+
+          </div>
+
+
         </Link>
       </Card>
     </li>
