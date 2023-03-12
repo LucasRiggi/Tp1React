@@ -18,14 +18,7 @@ function Professeur({ professeur }) {
             <h3>{"Date d'Embauche: "+ professeur.dateEmbauche} </h3>
           </div>
           
-          <div className="proffeseur_coursInf">
-          <ul>{professeur.Cours.map((cours) => (
-					<li key={cours}>{cours}</li>
-				  ))}</ul>
-
-          </div>
-
-
+          
         </Link>
       </Card>
     </li>

@@ -1,16 +1,17 @@
 import React from "react";
 
+import './AjouterProf.css';
 function NouveauProf({ ajouterProf }) {
   let saisieDate;
   let saisieNom;
   let saisiePrenom;
   let saisieImage;
 
-  function ajoutNouvelProfHandler(event) {
+  function ajoutNouveauProfHandler(event) {
     event.preventDefault();
 
     const nouveauProf = {
-        id: "P1",
+        id: "P5",
         dateEmbauche: saisieDate,
         nom: saisieNom,
         prenom: saisiePrenom,
@@ -18,20 +19,45 @@ function NouveauProf({ ajouterProf }) {
                
     };
     ajouterProf(nouveauProf);
+    
   }
 
-  function saisieHandler(event){
-    saisie = event.target.value;
+
+  function saisieDateHandler(event){
+    saisieDate = event.target.value;
     
+  }
+
+  function saisieNomHandler(event){
+    saisieNom = event.target.value;
+    
+  }
+
+  function saisiePrenomHandler(event){
+    saisiePrenom = event.target.value;
+    
+  }
+
+  function saisieImageHandler(event){
+    saisieImage = event.target.value;
+    
+  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
   }
   
   return (
     <form onSubmit={ajoutNouveauProfHandler}>
-      <input type="text" onChange={saisieDateHandler}/>
-      <input type="text" onChange={saisieNomHandler}/>
-      <input type="text" onChange={saisiePrenomHandler}/>
-      <input type="text" onChange={saisieImageHandler}/>
-      <button type="submit"> Ajouter le professeur</button>
+      <div className="AjouterProf_controls" >
+      <br/> Date :<input type="date" value={saisieDate} onChange={saisieDateHandler}/> 
+      <br/>Nom :<input type="text" value={saisieNom} onChange={saisieNomHandler}/>
+      <br/>Prenom : <input type="text" value={saisiePrenom} onChange={saisiePrenomHandler}/> 
+      <br/> Image :<input type="text" value={saisieImage} onChange={saisieImageHandler}/>
+      </div> 
+      <div className="AjouterProf_action" > 
+      <button type="submit" onSubmit={handleSubmit}> Ajouter le professeur</button>
+      </div> 
     </form>
   );
 }
