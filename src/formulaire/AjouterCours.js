@@ -1,6 +1,11 @@
 import React from "react";
 
+
+import "./AjouterCours.css"
+
 function NouveauCours({ ajouterCours }) {
+
+    let saisieIdCours;
     let saisieCours;
     let saisieDiscipline;
     let saisieNbMaximalEtuidiant;
@@ -57,14 +62,16 @@ function NouveauCours({ ajouterCours }) {
     return (
       <form onSubmit={ajoutNouveauCoursHandler}>
         <div className="AjouterCours_controls" >
+        
+        <h2>Ajouter un cours</h2>
         <br/> Cours :<input type="text" value={saisieCours} onChange={saisieCourstHandler}/> 
-        <br/>Dicipline :<input type="text" value={saisieDiscipline} onChange={saisieDisciplineHandler}/>
-        <br/>Nombre maximal d'etudiant : <input type="number" value={saisieNbMaximalEtuidiant} onChange={saisieNbMaxHandler}/> 
-        <br/> Date Debut :<input type="date" value={saisieDateDebut} onChange={saisieDateDebutHandler}/> 
+        <br/>Discipline :<input type="text" value={saisieDiscipline} onChange={saisieDisciplineHandler}/>
+        <br/>Nombre maximal d'étudiant : <input type="number" value={saisieNbMaximalEtuidiant} onChange={saisieNbMaxHandler}/> 
+        <br/> Date Début :<input type="date" value={saisieDateDebut} onChange={saisieDateDebutHandler}/> 
         <br/> Date Fin :<input type="date" value={saisieDateFin} onChange={saisieDateFinHandler}/> 
-        </div> 
-        <div className="AjouterCours_action" > 
+        <div className="boutonAjouter" > 
         <button type="submit" onSubmit={handleSubmit}> Ajouter le Cours</button>
+        </div> 
         </div> 
       </form>
     );

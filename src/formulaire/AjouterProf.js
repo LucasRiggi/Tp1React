@@ -50,14 +50,16 @@ function NouveauProf({ ajouterProf }) {
   return (
     <form onSubmit={ajoutNouveauProfHandler}>
       <div className="AjouterProf_controls" >
-      <br/> Date :<input type="date" value={saisieDate} onChange={saisieDateHandler}/> 
+      <h2>Ajouter professeur</h2>
+      <br/> Date d'embauche: <input type="date" value={saisieDate} onChange={saisieDateHandler}/> 
       <br/>Nom :<input type="text" value={saisieNom} onChange={saisieNomHandler}/>
-      <br/>Prenom : <input type="text" value={saisiePrenom} onChange={saisiePrenomHandler}/> 
+      <br/>Prénom : <input type="text" value={saisiePrenom} onChange={saisiePrenomHandler}/> 
       <br/> Image :<input type="text" value={saisieImage} onChange={saisieImageHandler}/>
-      </div> 
+  
       <div className="AjouterProf_action" > 
       <button type="submit" onSubmit={handleSubmit}> Ajouter le professeur</button>
       </div> 
+      </div>
     </form>
   );
 }

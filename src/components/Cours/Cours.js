@@ -10,7 +10,7 @@ function Cours({ cours }) {
         <Link to={`/${cours.id}`}>
         <div>
             <h2>{"Titre: "+ cours.titre}</h2>
-            <h3>{"Dicipline: "+cours.discipline}</h3>
+            <h3>{"Discipline: "+cours.discipline}</h3>
             <h3>{"Nombre maximal d'etudiant: "+cours.nbMaximalEtudiant}</h3>
             <h3>{"Debut: "+cours.dateDebut}</h3>
             <h3>{"Fin: "+cours.dateFin}</h3>

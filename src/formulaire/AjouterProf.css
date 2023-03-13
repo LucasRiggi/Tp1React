@@ -1,5 +1,11 @@
 .AjouterProf_controls {
-  
+  text-align:center;
+    position:relative;
+    margin: 0;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow: hidden;
+    background: rgba(25, 161, 31, 0.838);
 }
  
   .AjouterProf_controls input {
