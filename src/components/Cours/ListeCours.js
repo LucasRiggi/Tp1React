@@ -14,9 +14,9 @@ function ListeCours(props) {
     }
   
     return (
-      <ul className="users-list">
-        {props.cours.map((_cours_) => (
-          <Cours key={_cours_.id} _cours_={_cours_} />
+      <ul className="cours-list">
+        {props.cours.map((cours) => (
+          <Cours key={cours.id} cours={cours} />
         ))}
       </ul>
     );
