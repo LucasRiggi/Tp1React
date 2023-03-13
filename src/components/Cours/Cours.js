@@ -9,7 +9,7 @@ function Cours({ cours }) {
       <Card className="user-item__content">
         <Link to={`/${cours.id}`}>
         <div>
-            <h2>{"Tittre: "+ cours.titre}</h2>
+            <h2>{"Titre: "+ cours.titre}</h2>
             <h3>{"Dicipline: "+cours.discipline}</h3>
             <h3>{"Nombre maximal d'etudiant: "+cours.nbMaximalEtudiant}</h3>
             <h3>{"Debut: "+cours.dateDebut}</h3>

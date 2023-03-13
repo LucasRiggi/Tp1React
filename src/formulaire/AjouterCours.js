@@ -27,7 +27,7 @@ function NouveauCours({ ajouterCours }) {
   
   
     function saisieDateDebutHandler(event){
-      saisieCours = event.target.value;
+      saisieDateDebut = event.target.value;
       
     }
   
@@ -42,11 +42,11 @@ function NouveauCours({ ajouterCours }) {
     }
   
     function saisieCourstHandler(event){
-      saisieDateDebut = event.target.value;
+      saisieCours = event.target.value;
       
     }
     function saisieDateFinHandler(event){
-        saisieDateDebut = event.target.value;
+        saisieDateFin = event.target.value;
         
       }
     const handleSubmit = (event) => {
@@ -60,8 +60,8 @@ function NouveauCours({ ajouterCours }) {
         <br/> Cours :<input type="text" value={saisieCours} onChange={saisieCourstHandler}/> 
         <br/>Dicipline :<input type="text" value={saisieDiscipline} onChange={saisieDisciplineHandler}/>
         <br/>Nombre maximal d'etudiant : <input type="number" value={saisieNbMaximalEtuidiant} onChange={saisieNbMaxHandler}/> 
-        <br/> Date Debut :<input type="date" value={saisieDateDebut} onChange={saisieDateFinHandler}/> 
-        <br/> Date Fin :<input type="date" value={saisieDateFin} onChange={saisieDateDebutHandler}/> 
+        <br/> Date Debut :<input type="date" value={saisieDateDebut} onChange={saisieDateDebutHandler}/> 
+        <br/> Date Fin :<input type="date" value={saisieDateFin} onChange={saisieDateFinHandler}/> 
         </div> 
         <div className="AjouterCours_action" > 
         <button type="submit" onSubmit={handleSubmit}> Ajouter le Cours</button>
