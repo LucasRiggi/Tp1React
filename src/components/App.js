@@ -29,6 +29,7 @@ function App() {
           <Route path="/cours" exact>
             <LesCours />
           </Route>
+          <Redirect to="/" />
         </Switch>
       </main>
     </Router>
