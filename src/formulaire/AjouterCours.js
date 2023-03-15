@@ -62,7 +62,6 @@ function NouveauCours({ ajouterCours }) {
     return (
       <form onSubmit={ajoutNouveauCoursHandler}>
         <div className="AjouterCours_controls" >
-        
         <h2>Ajouter un cours</h2>
         <br/> Cours :<input type="text" value={saisieCours} onChange={saisieCourstHandler}/> 
         <br/>Discipline :<input type="text" value={saisieDiscipline} onChange={saisieDisciplineHandler}/>
