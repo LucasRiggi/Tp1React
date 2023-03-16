@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "../style/App.css";
 import logo from "../assets/Logomomo.png";
@@ -13,16 +13,11 @@ import LesCours from "../pages/LesCours";
 import Professeurs from "../pages/Professeurs";
 import MainNavigation from "../shared/Navigation/MainNavigation";
 import Acceuil from "../pages/Acceuil";
-import FiltrageCours from "./Filtrage/FiltrageCours";
 
 function App() {
- 
-
-  
-
   return (
     <Router>
-      <MainNavigation/>
+      <MainNavigation />
       <main>
         <Switch>
           <Route path="/" exact>
@@ -31,7 +26,7 @@ function App() {
           <Route path="/professeur" exact>
             <Professeurs />
           </Route>
-          <Route path="/cours" exact>
+          <Route path="/cours/:id" exact>
             <LesCours />
           </Route>
           <Redirect to="/" />

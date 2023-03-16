@@ -5,25 +5,25 @@ import Card from "./components/Card";
 
 
 function ListeProfesseurs(props) {
-    if (props.professeurs.length === 0) {
-      return (
-        <div className="center">
-          <Card>
-            <h2>Aucun enseignant</h2>
-          </Card>
-        </div>
-      );
-    }
-  
+  if (props.professeurs.length === 0) {
     return (
-      <ul className="users-list">
-        {props.professeurs.map((professeur) => (
-          <Professeur key={professeur.id} professeur={professeur} />
-        ))}
-      </ul>
+      <div className="center">
+        <Card>
+          <h2>Aucun enseignant</h2>
+        </Card>
+      </div>
     );
   }
-  
-  export default ListeProfesseurs;
+
+  return (
+    <ul className="users-list">
+      {props.professeurs.map((professeur) => (
+        <Professeur key={professeur.id} professeur={professeur} />
+      ))}
+    </ul>
+  );
+}
+
+export default ListeProfesseurs;
 
 

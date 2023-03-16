@@ -15,38 +15,40 @@
 }
 
 .nav-links a {
-  border: 1px solid transparent;
-  color: #292929;
-  text-decoration: none;
-  padding: 0.5rem;
+  background: #2E4F4F;
+  border: 1px solid #2E4F4F;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
 }
 
 .nav-links a:hover,
 .nav-links a:active,
 .nav-links a.active {
-  background: #f8df00;
+  background: #0E8388;
   border-color: #292929;
   color: #292929;
+
 }
 
-.nav-links button {
-  cursor: pointer;
-  border: 1px solid #292929;
-  color: #292929;
-  background: transparent;
-  padding: 0.5rem;
-  font: inherit;
-}
 
-.nav-links button:focus {
-  outline: none;
-}
-
-.nav-links button:hover,
-.nav-links button:active {
-  background: #292929;
-  color: white;
-}
 
 @media (min-width: 768px) {
   .nav-links {
@@ -62,39 +64,5 @@
     text-decoration: none;
   }
 
-  .nav-links button {
-    background: #FF4742;
-    border: 1px solid #FF4742;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 16px;
-    min-height: 40px;
-    outline: 0;
-    padding: 12px 14px;
-    text-align: center;
-    text-rendering: geometricprecision;
-    text-transform: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-  }
-  
-  .nav-links button:hover,
-  .nav-links button:active {
-    background-color: initial;
-    background-position: 0 0;
-    color: #FF4742;
-  }
-}
 
-.nav-links button:active  {
-  opacity: .5;
 }

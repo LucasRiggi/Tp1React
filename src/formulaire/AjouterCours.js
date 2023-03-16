@@ -40,16 +40,20 @@ function AjouterCours({ ajouterCours }) {
   
   const [validationDateDebut, setValidationDateDebut] = useState(false);
   const [validationDateFin, setValidationDateFin] = useState(false);
+  const [validationNbEleve, setValidationNbEleve] = useState(false);
+  const [validationCours, setValidationCours] = useState(false);
+  const [validationDiscipline, setValidationDiscipline] = useState(false);
+
   const [saisieCours, setSaisieCours] = useState("");
   const [saisieDiscipline, setSaisieDiscipline] = useState("");
   const [saisieNbMaximalEtudiant, setSaisieNbMaximalEtudiant] = useState("");
   const [saisieDateDebut, setSaisieDateDebut] = useState("");
   const [saisieDateFin, setSaisieDateFin] = useState("");
-
+  
    
     function ajoutNouveauCoursHandler(event) {
       event.preventDefault();
-      if(validationDateDebut && validationDateFin) {
+      if(validationDateDebut && validationDateFin && validationNbEleve && validationDiscipline && validationCours) {
       const nouveauCours = {
         id: "C" + Math.floor(Math.random() * 1000).toString(),
         titre: saisieCours,
@@ -98,16 +102,31 @@ function AjouterCours({ ajouterCours }) {
       return eleveDansLeCours;
     }
 
-    function saisieCourstHandler(event){
+    function saisieCoursHandler(event){
       setSaisieCours(event.target.value);
+      if(event.target.value != "") {
+        setValidationCours(true);
+      } else {
+        setValidationCours(false);
+      }
     }
     
     function saisieDisciplineHandler(event){
       setSaisieDiscipline(event.target.value);
+      if(event.target.value != "") {
+        setValidationDiscipline(true);
+      } else {
+        setValidationDiscipline(false);
+      }
     }
     
     function saisieNbMaxHandler(event){
       setSaisieNbMaximalEtudiant(event.target.value);
+      if(event.target.value > 0) {
+        setValidationNbEleve(true)
+      } else {
+        setValidationNbEleve(false)
+      }
     }
     
     function saisieDateDebutHandler(event){
@@ -148,13 +167,13 @@ function AjouterCours({ ajouterCours }) {
       <form onSubmit={ajoutNouveauCoursHandler}>
         <div className="AjouterCours_controls" >
         <h2>Ajouter un cours</h2>
-        <br/> Cours :<input type="text" value={saisieCours} onChange={saisieCourstHandler}/> 
+        <br/> Cours :<input type="text" value={saisieCours} onChange={saisieCoursHandler}/> 
         <br/>Discipline :<input type="text" value={saisieDiscipline} onChange={saisieDisciplineHandler}/>
         <br/>Nombre maximal d'étudiant : <input type="number" min="1" max="30"value={saisieNbMaximalEtudiant} onChange={saisieNbMaxHandler}/> 
         <br/> Date Début :<input type="date" value={saisieDateDebut} onChange={saisieDateDebutHandler}/> 
         <br/> Date Fin :<input type="date" value={saisieDateFin} onChange={saisieDateFinHandler}/> 
         <div className="boutonAjouter" > 
-        <button type="submit" onSubmit={handleSubmit}> Ajouter le Cours</button>
+        <button type="submit" className="AjouterCours_button" onSubmit={handleSubmit}> Ajouter le Cours</button>
         </div> 
         </div> 
       </form>

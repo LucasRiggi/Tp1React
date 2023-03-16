@@ -14,11 +14,12 @@ function Professeur({ professeur }) {
           </div>
 
           <div className="user-item__info">
-            <h2>{professeur.nom + " "+ professeur.prenom}</h2>
-            <h3>{"Date d'Embauche: "+ professeur.dateEmbauche} </h3>
+            <h2>{professeur.nom + " " + professeur.prenom}</h2>
+            <h5>{"Cours : " + professeur.Cours }</h5>
+            <h3>{"Date d'Embauche: " + professeur.dateEmbauche} </h3>
           </div>
-          
-          
+
+
         </Link>
       </Card>
     </li>

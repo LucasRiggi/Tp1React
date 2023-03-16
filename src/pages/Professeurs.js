@@ -36,7 +36,7 @@ function Professeurs() {
 
   function ajouterProf(nouveauProf) {
     setProfesseur(() => professeurs.concat(nouveauProf));
-    
+
   }
 
   return (

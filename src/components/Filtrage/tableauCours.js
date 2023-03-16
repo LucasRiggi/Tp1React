@@ -18,9 +18,10 @@ const TableauDepenses = (props) => {
     { label: 'Déc', value: 0 },
   ];
 
-  
+
 
   return <Tableau dataPoints={chartDataPoints} />;
 };
 
 export default TableauDepenses;
+f
