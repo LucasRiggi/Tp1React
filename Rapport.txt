@@ -1,0 +1,30 @@
+1. Compr´ehension du probl`eme: Vous faites une liste num´erot´ee la plus pr´ecise possible
+de chacune des fonctionnalit´es que vous devez impl´ementer. Il est possible de consulter
+le client (votre professeur) pour d´eterminer si votre compr´ehension correspond `a ses
+demandes.
+
+
+2. R´esultat de l’impl´ementation: Vous d´etaillez les fonctionnalit´es que vous avez r´eussi `a
+impl´ementer ainsi que celles que vous avez du laisser de cˆot´e.
+
+
+3. Un journal de bord individuel (un par membre de l’´equipe) de toutes les p´eriodes (en
+classe ou non) o`u vous avez travaill´e sur le projet. Chaque p´eriode est accompagn´ee
+d’un estim´e du temps que vous avez travaill´e et vous indiquez le total `a la fin.
+
+
+journal Chems : 
+    L'équipe au complet a commencé le travail le mardi 7 mars. 
+
+    Nous étions tous les trois en appel pour créer et initialiser le répertoire Git.
+
+    pour la programmation on a utiliser "visual studio code" avec l'aide de la fonctionnalitees "live share" depuis l'ordinateur de diego ou lucas une bonne parti du temps 
+    c'est pour cela que la pluspart des commits sont de chez eux . 
+
+    Moi j'ai programmer la page  cours et ajouterCours j'ai aussi aider lucas a faire ajouterProf
+    
+    Le 12-13 mars :
+        le 12 mars : les 3 membre de l'equipe on etait en appel et on fesais de la programmation sur l'ordinateur de diego et/ou lucas l'appel a durer 5h
+        le 12 mars : le soir je me suis mis sur la page cours et le formulaire ajouterCours j'ai mis un total de 4h (avec pause) j'ai fini le 13 mars a 2h am.
+
+    

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "../style/App.css";
 import logo from "../assets/Logomomo.png";
@@ -13,8 +13,13 @@ import LesCours from "../pages/LesCours";
 import Professeurs from "../pages/Professeurs";
 import MainNavigation from "../shared/Navigation/MainNavigation";
 import Acceuil from "../pages/Acceuil";
+import FiltrageCours from "./Filtrage/FiltrageCours";
 
 function App() {
+ 
+
+  
+
   return (
     <Router>
       <MainNavigation/>

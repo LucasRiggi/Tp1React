@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
-import './AjouterProf.css';
+import '../style/AjouterProf.css';
 function NouveauProf({ ajouterProf }) {
-  let saisieDate;
-  let saisieNom;
-  let saisiePrenom;
-  let saisieImage;
+  let [saisieDate, setSaisieDate] = useState("");
+  let [saisieNom, setSaisieNom] = useState("");
+  let [saisiePrenom, setSaisiePrenom] = useState("");
+  let [saisieImage, setSaisieImage] = useState("");
 
   function ajoutNouveauProfHandler(event) {
     event.preventDefault();
@@ -20,26 +20,30 @@ function NouveauProf({ ajouterProf }) {
     };
     ajouterProf(nouveauProf);
     
+    setSaisieDate("");
+    setSaisieNom("");
+    setSaisiePrenom("");
+    setSaisieImage("");
   }
 
 
   function saisieDateHandler(event){
-    saisieDate = event.target.value;
+    setSaisieDate(event.target.value);
     
   }
 
   function saisieNomHandler(event){
-    saisieNom = event.target.value;
+    setSaisieNom(event.target.value);
     
   }
 
   function saisiePrenomHandler(event){
-    saisiePrenom = event.target.value;
+    setSaisiePrenom(event.target.value);
     
   }
 
   function saisieImageHandler(event){
-    saisieImage = event.target.value;
+    setSaisieImage(event.target.value);
     
   }
   const handleSubmit = (event) => {
