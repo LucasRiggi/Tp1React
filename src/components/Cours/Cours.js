@@ -7,7 +7,7 @@ function Cours({ cours }) {
   return (
     <li className="user-item">
       <Card className="user-item__content">
-        <Link to={`/cours/${cours.id}`}>
+        <Link to={`/${cours.id}`}>
         <div>
             <h2>{"Titre: "+ cours.titre}</h2>
             <h3>{"Discipline: "+cours.discipline}</h3>
@@ -15,6 +15,7 @@ function Cours({ cours }) {
             <h3>{"Debut: "+cours.dateDebut}</h3>
             <h3>{"Fin: "+cours.dateFin}</h3>
             <h3>{"ID: "+cours.id}</h3>
+            <h3>{"Classe : "+cours.classes[0].prenom}</h3>
           </div>
         </Link>
       </Card>

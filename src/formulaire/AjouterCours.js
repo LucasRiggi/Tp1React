@@ -57,7 +57,8 @@ function AjouterCours({ ajouterCours }) {
         nbMaximalEtudiant:saisieNbMaximalEtudiant,
         dateDebut:saisieDateDebut,
         dateFin:saisieDateFin,
-        session:"session 4"   
+        session:"session 4",
+        classes:eleveDansLeCours(saisieNbMaximalEtudiant)   
 
       };
       ajouterCours(nouveauCours);
@@ -69,14 +70,26 @@ function AjouterCours({ ajouterCours }) {
       setSaisieDateFin("");
     } 
     }
-    function eleveDansLeCours() {
-      const eleveDansLeCours = []
-      const tailleTableau = Math.floor(Math.random() * 30);
-      const i = 0;
-      const valeurRepeter = false;
-      while (i < tailleTableau) {
-        
-
+    function eleveDansLeCours(nbEleve) {
+      let eleveDansLeCours = [];
+      let i = 0;
+      let tableauPourEviterRepetition = [];
+      let valeurRepeter = false;
+      let indexTableauAjout = Math.floor(Math.random() * 30);
+      /* Création du tableau de la classe */
+      while (i < nbEleve) {
+        valeurRepeter = false;
+        indexTableauAjout = Math.floor(Math.random() * 30);
+        /* Éviter répétition */ 
+        while(valeurRepeter == false) {
+          if(!(eleveDansLeCours.includes(eleves[indexTableauAjout]))) {
+            eleveDansLeCours.push(eleves[indexTableauAjout]);
+            valeurRepeter = true;
+            i += 1;
+          } else {
+            indexTableauAjout = Math.floor(Math.random() * nbEleve);
+          }
+        }
       }
 
 

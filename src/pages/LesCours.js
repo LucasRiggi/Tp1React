@@ -6,7 +6,7 @@ import FiltrageCours from "../components/Filtrage/FiltrageCours";
 
 function LesCours() { 
    const [filteredSession, setFilteredSession] = useState("session 4");
-   
+
    const filterChangeHandler = (selectedSession) => {
     setFilteredSession(selectedSession);
    };
@@ -21,7 +21,39 @@ function LesCours() {
          nbMaximalEtudiant:"28",
          dateDebut:"2022-01-24",
          dateFin:"2022-05-16",
-         session: "session 4"
+         session: "session 4",
+         classes: [
+            { prenom: "Alice", nom: "Durand" },
+            { prenom: "Bob", nom: "Martin" },
+            { prenom: "Charlie", nom: "Lefebvre" },
+            { prenom: "David", nom: "Girard" },
+            { prenom: "Émilie", nom: "Roy" },
+            { prenom: "Frédéric", nom: "Dubois" },
+            { prenom: "Gabrielle", nom: "Lavoie" },
+            { prenom: "Hector", nom: "Boucher" },
+            { prenom: "Isabelle", nom: "Côté" },
+            { prenom: "Jean", nom: "Tremblay" },
+            { prenom: "Karine", nom: "Bergeron" },
+            { prenom: "Lucie", nom: "Pelletier" },
+            { prenom: "Marc", nom: "Gagnon" },
+            { prenom: "Nathalie", nom: "Rousseau" },
+            { prenom: "Olivier", nom: "Laporte" },
+            { prenom: "Pascal", nom: "Lachance" },
+            { prenom: "Quentin", nom: "Leclerc" },
+            { prenom: "Roxanne", nom: "Dufour" },
+            { prenom: "Sylvain", nom: "Bélanger" },
+            { prenom: "Thomas", nom: "Moreau" },
+            { prenom: "Ulysse", nom: "Laliberté" },
+            { prenom: "Valérie", nom: "Gauthier" },
+            { prenom: "William", nom: "Fournier" },
+            { prenom: "Xavier", nom: "Beaudoin" },
+            { prenom: "Yannick", nom: "Leduc" },
+            { prenom: "Zoé", nom: "Dupuis" },
+            { prenom: "Adrien", nom: "Gagné" },
+            { prenom: "Béatrice", nom: "Jacques" },
+            { prenom: "Charles", nom: "Dion" }
+          ]
+
       },      
       {
          id: "C2",
@@ -30,7 +62,38 @@ function LesCours() {
          nbMaximalEtudiant:"28",
          dateDebut:"2023-01-23",
          dateFin:"2023-05-15",
-         session: "session 4"
+         session: "session 4",
+         classes: [
+            { prenom: "Alice", nom: "Durand" },
+            { prenom: "Bob", nom: "Martin" },
+            { prenom: "Charlie", nom: "Lefebvre" },
+            { prenom: "David", nom: "Girard" },
+            { prenom: "Émilie", nom: "Roy" },
+            { prenom: "Frédéric", nom: "Dubois" },
+            { prenom: "Gabrielle", nom: "Lavoie" },
+            { prenom: "Hector", nom: "Boucher" },
+            { prenom: "Isabelle", nom: "Côté" },
+            { prenom: "Jean", nom: "Tremblay" },
+            { prenom: "Karine", nom: "Bergeron" },
+            { prenom: "Lucie", nom: "Pelletier" },
+            { prenom: "Marc", nom: "Gagnon" },
+            { prenom: "Nathalie", nom: "Rousseau" },
+            { prenom: "Olivier", nom: "Laporte" },
+            { prenom: "Pascal", nom: "Lachance" },
+            { prenom: "Quentin", nom: "Leclerc" },
+            { prenom: "Roxanne", nom: "Dufour" },
+            { prenom: "Sylvain", nom: "Bélanger" },
+            { prenom: "Thomas", nom: "Moreau" },
+            { prenom: "Ulysse", nom: "Laliberté" },
+            { prenom: "Valérie", nom: "Gauthier" },
+            { prenom: "William", nom: "Fournier" },
+            { prenom: "Xavier", nom: "Beaudoin" },
+            { prenom: "Yannick", nom: "Leduc" },
+            { prenom: "Zoé", nom: "Dupuis" },
+            { prenom: "Adrien", nom: "Gagné" },
+            { prenom: "Béatrice", nom: "Jacques" },
+            { prenom: "Charles", nom: "Dion" }
+          ]
       },
       {
          id: "C3",
@@ -39,7 +102,38 @@ function LesCours() {
          nbMaximalEtudiant:"28",
          dateDebut:"2023-01-23",
          dateFin:"2023-05-15",
-         session: "session 3"
+         session: "session 3",
+         classes: [
+            { prenom: "Alice", nom: "Durand" },
+            { prenom: "Bob", nom: "Martin" },
+            { prenom: "Charlie", nom: "Lefebvre" },
+            { prenom: "David", nom: "Girard" },
+            { prenom: "Émilie", nom: "Roy" },
+            { prenom: "Frédéric", nom: "Dubois" },
+            { prenom: "Gabrielle", nom: "Lavoie" },
+            { prenom: "Hector", nom: "Boucher" },
+            { prenom: "Isabelle", nom: "Côté" },
+            { prenom: "Jean", nom: "Tremblay" },
+            { prenom: "Karine", nom: "Bergeron" },
+            { prenom: "Lucie", nom: "Pelletier" },
+            { prenom: "Marc", nom: "Gagnon" },
+            { prenom: "Nathalie", nom: "Rousseau" },
+            { prenom: "Olivier", nom: "Laporte" },
+            { prenom: "Pascal", nom: "Lachance" },
+            { prenom: "Quentin", nom: "Leclerc" },
+            { prenom: "Roxanne", nom: "Dufour" },
+            { prenom: "Sylvain", nom: "Bélanger" },
+            { prenom: "Thomas", nom: "Moreau" },
+            { prenom: "Ulysse", nom: "Laliberté" },
+            { prenom: "Valérie", nom: "Gauthier" },
+            { prenom: "William", nom: "Fournier" },
+            { prenom: "Xavier", nom: "Beaudoin" },
+            { prenom: "Yannick", nom: "Leduc" },
+            { prenom: "Zoé", nom: "Dupuis" },
+            { prenom: "Adrien", nom: "Gagné" },
+            { prenom: "Béatrice", nom: "Jacques" },
+            { prenom: "Charles", nom: "Dion" }
+          ]
       },
       {
          id: "C4",
@@ -48,7 +142,38 @@ function LesCours() {
          nbMaximalEtudiant:"28",
          dateDebut:"2023-01-23",
          dateFin:"2023-05-15",
-         session: "session 2"
+         session: "session 2",
+         classes: [
+            { prenom: "Alice", nom: "Durand" },
+            { prenom: "Bob", nom: "Martin" },
+            { prenom: "Charlie", nom: "Lefebvre" },
+            { prenom: "David", nom: "Girard" },
+            { prenom: "Émilie", nom: "Roy" },
+            { prenom: "Frédéric", nom: "Dubois" },
+            { prenom: "Gabrielle", nom: "Lavoie" },
+            { prenom: "Hector", nom: "Boucher" },
+            { prenom: "Isabelle", nom: "Côté" },
+            { prenom: "Jean", nom: "Tremblay" },
+            { prenom: "Karine", nom: "Bergeron" },
+            { prenom: "Lucie", nom: "Pelletier" },
+            { prenom: "Marc", nom: "Gagnon" },
+            { prenom: "Nathalie", nom: "Rousseau" },
+            { prenom: "Olivier", nom: "Laporte" },
+            { prenom: "Pascal", nom: "Lachance" },
+            { prenom: "Quentin", nom: "Leclerc" },
+            { prenom: "Roxanne", nom: "Dufour" },
+            { prenom: "Sylvain", nom: "Bélanger" },
+            { prenom: "Thomas", nom: "Moreau" },
+            { prenom: "Ulysse", nom: "Laliberté" },
+            { prenom: "Valérie", nom: "Gauthier" },
+            { prenom: "William", nom: "Fournier" },
+            { prenom: "Xavier", nom: "Beaudoin" },
+            { prenom: "Yannick", nom: "Leduc" },
+            { prenom: "Zoé", nom: "Dupuis" },
+            { prenom: "Adrien", nom: "Gagné" },
+            { prenom: "Béatrice", nom: "Jacques" },
+            { prenom: "Charles", nom: "Dion" }
+          ]
       },
       {
          id: "C5",
@@ -57,7 +182,38 @@ function LesCours() {
          nbMaximalEtudiant:"28",
          dateDebut:"2023-01-23",
          dateFin:"2023-05-15",
-         session: "session 1"
+         session: "session 1",
+         classes: [
+            { prenom: "Alice", nom: "Durand" },
+            { prenom: "Bob", nom: "Martin" },
+            { prenom: "Charlie", nom: "Lefebvre" },
+            { prenom: "David", nom: "Girard" },
+            { prenom: "Émilie", nom: "Roy" },
+            { prenom: "Frédéric", nom: "Dubois" },
+            { prenom: "Gabrielle", nom: "Lavoie" },
+            { prenom: "Hector", nom: "Boucher" },
+            { prenom: "Isabelle", nom: "Côté" },
+            { prenom: "Jean", nom: "Tremblay" },
+            { prenom: "Karine", nom: "Bergeron" },
+            { prenom: "Lucie", nom: "Pelletier" },
+            { prenom: "Marc", nom: "Gagnon" },
+            { prenom: "Nathalie", nom: "Rousseau" },
+            { prenom: "Olivier", nom: "Laporte" },
+            { prenom: "Pascal", nom: "Lachance" },
+            { prenom: "Quentin", nom: "Leclerc" },
+            { prenom: "Roxanne", nom: "Dufour" },
+            { prenom: "Sylvain", nom: "Bélanger" },
+            { prenom: "Thomas", nom: "Moreau" },
+            { prenom: "Ulysse", nom: "Laliberté" },
+            { prenom: "Valérie", nom: "Gauthier" },
+            { prenom: "William", nom: "Fournier" },
+            { prenom: "Xavier", nom: "Beaudoin" },
+            { prenom: "Yannick", nom: "Leduc" },
+            { prenom: "Zoé", nom: "Dupuis" },
+            { prenom: "Adrien", nom: "Gagné" },
+            { prenom: "Béatrice", nom: "Jacques" },
+            { prenom: "Charles", nom: "Dion" }
+          ]
       }
 
 

@@ -24,9 +24,6 @@ function MainNavigation(props) {
 
   return (
     <React.Fragment>
-
-      
-
       <MainHeader>
 
         <button className="main-navigation__menu-btn" onClick={ouvrirTiroir}>
